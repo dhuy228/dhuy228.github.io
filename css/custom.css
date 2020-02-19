@@ -1,0 +1,37 @@
+/* [1] The container */
+.zoom-effect {
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.zoom-effect img {
+  transition: transform .5s ease;
+  min-height: 50vh;
+  max-height: 25vw;
+  object-fit: cover;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.zoom-effect:hover img {
+  transform: scale(1.5);
+}
+
+.avatar {
+	max-width: 200px;
+	overflow: hidden;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+}
+
+.activity img {
+	filter: brightness(50%);
+}
+
+.fa {
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
